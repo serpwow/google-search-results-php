@@ -68,7 +68,7 @@ class GoogleSearchResults {
 
     print_r($r);
 
-    $result = $api->get($path, $q);
+    $result = $api->get("https://api.serpwow.com{$path}", $q);
 
     if($result->info->http_code == 200 || $result->info->http_code == 301 || $result->info->http_code == 302) {
       if($decode_format == 'string') {
