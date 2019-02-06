@@ -77,6 +77,7 @@ class GoogleSearchResults {
         return $result->decode_response();
       }
     } else {
+      print_r($result);
       $error = $result->decode_response();
       $msg = $error->request_info->message;
       print_r($error);
