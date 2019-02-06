@@ -50,6 +50,7 @@ class GoogleSearchResults {
     if (isset($output) && ($output != 'json')) {
       $args['output'] = $output;
     }
+    print_r($args);
     $api = new RestClient($args);
 
     $default_q = [
@@ -65,6 +66,8 @@ class GoogleSearchResults {
       $q = $default_q;
     }
 
+    print_r($r);
+
     $result = $api->get($path, $q);
 
     if($result->info->http_code == 200 || $result->info->http_code == 301 || $result->info->http_code == 302) {
@@ -76,6 +79,7 @@ class GoogleSearchResults {
     } else {
       $error = $result->decode_response();
       $msg = $error->request_info->message;
+      print_r($error);
       throw new SerpWowException($msg);
       return;
     }
