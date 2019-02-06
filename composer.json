@@ -1,7 +1,7 @@
 {
   "name": "serpwow/google-search-results-php", 
   "version": "0.0.1", 
-  "description": "Google Search Results Node JS API via SerpWow.com", 
+  "description": "Google Search Results PHP API via SerpWow.com", 
   "type": "library", 
   "keywords": [    
     "google",
