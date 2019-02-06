@@ -35,7 +35,7 @@ class GoogleSearchResults {
   }
 
   public function account() {
-    return $this->search('json', 'json', $q, '/live/account');
+    return $this->search('json', 'json', NULL, '/live/account');
   }
     
   function search($decode_format, $output, $q, $path) {
