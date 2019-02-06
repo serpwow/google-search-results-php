@@ -1,6 +1,6 @@
 <?php
 
-require 'restclient.php';
+require "vendor/autoload.php";
 
 // SerpWowException
 class SerpWowException extends Exception {}

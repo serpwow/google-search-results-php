@@ -1,6 +1,6 @@
 {
   "name": "serpwow/google-search-results-php", 
-  "version": "0.0.5", 
+  "version": "0.0.6", 
   "description": "Google Search Results PHP package via SerpWow.com", 
   "type": "library",
   "keywords": [    
@@ -40,7 +40,8 @@
   "require": {
       "php": ">=5.4.0", 
       "ext-curl": "*", 
-      "ext-json": "*"
+      "ext-json": "*",
+    "tcdent/php-restclient": "^0.1.7"
   }, 
   "require-dev": {
       "php": ">=5.5.7", 
@@ -48,7 +49,6 @@
   }, 
   "autoload": {
       "files": [
-        "restclient.php", 
         "google-search-results.php"
         ]
   }
