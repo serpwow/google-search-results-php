@@ -5,10 +5,10 @@ This PHP package allows you to scrape and parse Google Search Results using [Ser
 All methods support promises and node-style callbacks.
 
 ## Installation
-You can install google-search-results-serpwow with:
+You can install google-search-results-php with:
 
 ```shell
-$ npm i google-search-results-serpwow
+$ composer require serpwow/google-search-results-php
 ```
 
 and update with:

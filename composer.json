@@ -1,5 +1,5 @@
 {
-  "name": "serpwow/google-search-results-php", 
+  "name": "serpwow/google-search-results", 
   "version": "0.1.4", 
   "description": "Google Search Results PHP package via SerpWow.com", 
   "type": "library",
