@@ -44,7 +44,7 @@ class GoogleSearchResults {
     }
     
     $args = [
-      'base_url' => "https://api.serpwow.com",
+      'base_url' => "https://api.serpwow.com{$path}",
       'format' => $decode_format
     ];
     if (isset($output) && ($output != 'json')) {
