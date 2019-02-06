@@ -59,8 +59,6 @@ class GoogleSearchResults {
       $q = $default_q;
     }
 
-    print_r($r);
-
     $result = $api->get("https://api.serpwow.com{$path}", $q);
 
     if($result->info->http_code == 200 || $result->info->http_code == 301 || $result->info->http_code == 302) {
@@ -70,10 +68,8 @@ class GoogleSearchResults {
         return $result->decode_response();
       }
     } else {
-      print_r($result);
       $error = $result->decode_response();
       $msg = $error->request_info->message;
-      print_r($error);
       throw new SerpWowException($msg);
       return;
     }
