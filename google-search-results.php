@@ -43,14 +43,7 @@ class GoogleSearchResults {
       throw new SerpWowException("api_key must be defined in the constructor");
     }
     
-    $args = [
-      'base_url' => "https://api.serpwow.com{$path}",
-      'format' => $decode_format
-    ];
-    if (isset($output) && ($output != 'json')) {
-      $args['output'] = $output;
-    }
-    print_r($args);
+    $args = [];
     $api = new RestClient($args);
 
     $default_q = [
