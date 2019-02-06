@@ -1,0 +1,55 @@
+{
+  "name": "serpwow/google-search-results-php", 
+  "version": "0.0.1", 
+  "description": "Google Search Results Node JS API via SerpWow.com", 
+  "type": "library", 
+  "keywords": [    
+    "google",
+    "search",
+    "scrape",
+    "api",
+    "query",
+    "json",
+    "html",
+    "image",
+    "automated",
+    "localization",
+    "serp",
+    "serpwow",
+    "serpapi",
+    "proxy",
+    "proxies",
+    "image",
+    "news",
+    "shopping",
+    "videos",
+    "seo"
+  ], 
+  "homepage": "http://github.com/serpwow/google-search-results-php", 
+  "license": "MIT", 
+  "authors": [
+      {
+          "name": "SerpWow", 
+          "role": "Developer", 
+          "email": "hello@serpwow.com"
+      }
+  ],
+  "support": {
+      "issues": "http://github.com/serpwow/google-search-results-php/issues"
+  }, 
+  "require": {
+      "php": ">=5.4.0", 
+      "ext-curl": "*", 
+      "ext-json": "*"
+  }, 
+  "require-dev": {
+      "php": ">=5.5.7", 
+      "phpunit/phpunit": "^7.0"
+  }, 
+  "autoload": {
+      "files": [
+        "restclient.php", 
+        "google-search-results.php"
+        ]
+  }
+}
