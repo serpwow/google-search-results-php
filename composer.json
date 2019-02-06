@@ -1,9 +1,8 @@
 {
   "name": "serpwow/google-search-results-php", 
-  "version": "0.0.4", 
+  "version": "0.0.5", 
   "description": "Google Search Results PHP package via SerpWow.com", 
   "type": "library",
-  "minimum-stability": "dev",
   "keywords": [    
     "google",
     "search",
