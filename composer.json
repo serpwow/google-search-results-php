@@ -1,6 +1,6 @@
 {
   "name": "serpwow/google-search-results-php", 
-  "version": "0.0.6", 
+  "version": "0.0.7", 
   "description": "Google Search Results PHP package via SerpWow.com", 
   "type": "library",
   "keywords": [    
@@ -28,28 +28,28 @@
   "homepage": "http://github.com/serpwow/google-search-results-php", 
   "license": "MIT", 
   "authors": [
-      {
-          "name": "SerpWow", 
-          "role": "Developer", 
-          "email": "hello@serpwow.com"
-      }
+    {
+    "name": "SerpWow", 
+    "role": "Developer", 
+    "email": "hello@serpwow.com"
+    }
   ],
   "support": {
-      "issues": "http://github.com/serpwow/google-search-results-php/issues"
+    "issues": "http://github.com/serpwow/google-search-results-php/issues"
   }, 
   "require": {
-      "php": ">=5.4.0", 
-      "ext-curl": "*", 
-      "ext-json": "*",
+    "php": ">=5.4.0", 
+    "ext-curl": "*", 
+    "ext-json": "*",
     "tcdent/php-restclient": "^0.1.7"
   }, 
   "require-dev": {
-      "php": ">=5.5.7", 
-      "phpunit/phpunit": "^7.0"
+    "php": ">=5.5.7", 
+    "phpunit/phpunit": "^7.0"
   }, 
   "autoload": {
-      "files": [
+    "files": [
         "google-search-results.php"
-        ]
+    ]
   }
 }
