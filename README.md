@@ -46,7 +46,7 @@ $serpwow = new GoogleSearchResults("demo");
 
 // set up the search parameters
 $params = [
-  "q" => "mumbai city center"
+  "q" => "pizza"
 ];
 
 // retrieve the search results as JSON
@@ -188,14 +188,14 @@ require "vendor/autoload.php";
 $serpwow = new GoogleSearchResults("demo");
 
 
-// perform a search on Google News, just looking at blogs, filtering out duplicates, ordered by date, in the last month
+// perform a search on Google News, just looking at blogs, ordered by date, in the last year, filtering out duplicates
 $params = [
   "q" => "football news",
   "search_type" => "news",
   "news_type" => "blogs",
   "show_duplicates" => "false",
   "sort_by" => "date",
-  "time_period" => "last_month"
+  "time_period" => "last_year"
 ];
 // retrieve the search results as JSON
 $result = $serpwow->json($params);
