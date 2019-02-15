@@ -1,6 +1,6 @@
 # Google Search Results in PHP
 
-This PHP package allows you to scrape and parse Google Search Results using [SerpWow](https://serpwow.com). In addition to [Search](https://serpwow.com/docs/search/overview) you can also use this package to access the SerpWow [Locations API](https://serpwow.com/docs/locations/overview) and [Account API](https://serpwow.com/docs/account/overview).
+This PHP package allows you to scrape and parse Google Search Results using [SerpWow](https://serpwow.com). In addition to [Search](https://serpwow.com/docs/search/overview) you can also use this package to access the SerpWow [Locations API](https://serpwow.com/docs/locations/overview) and [Account API](https://serpwow.com/docs/account).
 
 ## Installation
 You can install google-search-results with [Composer](https://getcomposer.org/).
@@ -15,7 +15,7 @@ View package on [Packagist.com](https://packagist.org/packages/serpwow/google-se
 We have included examples here but full SerpWow API documentation is available at the [API Docs](https://serpwow.com/docs):
 - [Search API Docs](https://serpwow.com/docs/search/overview) 
 - [Locations API Docs](https://serpwow.com/docs/locations/overview) 
-- [Account API Docs](https://serpwow.com/docs/account/overview)
+- [Account API Docs](https://serpwow.com/docs/account)
 
 You can also use the [API Playground](https://app.serpwow.com/playground) to visually build Google search requests using SerpWow.
 
@@ -432,7 +432,7 @@ print_r($result);
 ```
 
 ## Account API Example
-The [Account API](https://serpwow.com/docs/account/overview) allows you to check your current SerpWow usage and billing information. 
+The [Account API](https://serpwow.com/docs/account) allows you to check your current SerpWow usage and billing information. 
 ```php
 <?php
 
