@@ -19,26 +19,32 @@ class GoogleSearchResults {
   }
   
   public function json($q) {
-    return $this->search('json', 'json', $q, '/live/search');
+    return $this->httpGet('json', 'json', $q, '/live/search');
   }
 
   public function html($q) {
-    return $this->search('string', 'html', $q, '/live/search');
+    return $this->httpGet('string', 'html', $q, '/live/search');
   }
 
   public function csv($q) {
-    return $this->search('string', 'csv', $q, '/live/search');
+    return $this->httpGet('string', 'csv', $q, '/live/search');
   }
 
   public function locations($q) {
-    return $this->search('json', 'json', $q, '/live/locations');
+    return $this->httpGet('json', 'json', $q, '/live/locations');
   }
 
   public function account() {
-    return $this->search('json', 'json', NULL, '/live/account');
+    return $this->httpGet('json', 'json', NULL, '/live/account');
   }
+
+
+  public function listBatches() {
+    return $this->httpGet('json', 'json', NULL, '/live/batches');
+  }
+
     
-  function search($decode_format, $output, $q, $path) {
+  function httpGet($decode_format, $output, $q, $path) {
     if($this->api_key == NULL) {
       throw new SerpWowException("api_key must be defined in the constructor");
     }
