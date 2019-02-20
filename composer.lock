@@ -4,74 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c6a5d97ae40753d129f2e25d4b28ee01",
+    "content-hash": "91a75bcd5d5f2ac8f7bfbf06ced91e09",
     "packages": [
-        {
-            "name": "serpwow/google-search-results-php",
-            "version": "0.1.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/serpwow/google-search-results-php.git",
-                "reference": "05aaf6209f1061bc81a77758822296e06d55074e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/serpwow/google-search-results-php/zipball/05aaf6209f1061bc81a77758822296e06d55074e",
-                "reference": "05aaf6209f1061bc81a77758822296e06d55074e",
-                "shasum": ""
-            },
-            "require": {
-                "ext-curl": "*",
-                "ext-json": "*",
-                "php": ">=5.4.0",
-                "tcdent/php-restclient": "^0.1.7"
-            },
-            "require-dev": {
-                "php": ">=5.5.7",
-                "phpunit/phpunit": "^7.0"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "google-search-results.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "SerpWow",
-                    "email": "hello@serpwow.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Google Search Results PHP package via SerpWow.com",
-            "homepage": "http://github.com/serpwow/google-search-results-php",
-            "keywords": [
-                "SERP",
-                "api",
-                "automated",
-                "google",
-                "html",
-                "image",
-                "json",
-                "localization",
-                "news",
-                "proxies",
-                "proxy",
-                "query",
-                "scrape",
-                "search",
-                "seo",
-                "serpapi",
-                "serpwow",
-                "shopping",
-                "videos"
-            ],
-            "time": "2019-02-06T21:52:20+00:00"
-        },
         {
             "name": "tcdent/php-restclient",
             "version": "0.1.7",
@@ -1446,6 +1380,72 @@
             "description": "Library that helps with managing the version number of Git-hosted PHP projects",
             "homepage": "https://github.com/sebastianbergmann/version",
             "time": "2016-10-03T07:35:21+00:00"
+        },
+        {
+            "name": "serpwow/google-search-results-php",
+            "version": "0.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/serpwow/google-search-results-php.git",
+                "reference": "05aaf6209f1061bc81a77758822296e06d55074e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/serpwow/google-search-results-php/zipball/05aaf6209f1061bc81a77758822296e06d55074e",
+                "reference": "05aaf6209f1061bc81a77758822296e06d55074e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": ">=5.4.0",
+                "tcdent/php-restclient": "^0.1.7"
+            },
+            "require-dev": {
+                "php": ">=5.5.7",
+                "phpunit/phpunit": "^7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "google-search-results.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "SerpWow",
+                    "email": "hello@serpwow.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Google Search Results PHP package via SerpWow.com",
+            "homepage": "http://github.com/serpwow/google-search-results-php",
+            "keywords": [
+                "SERP",
+                "api",
+                "automated",
+                "google",
+                "html",
+                "image",
+                "json",
+                "localization",
+                "news",
+                "proxies",
+                "proxy",
+                "query",
+                "scrape",
+                "search",
+                "seo",
+                "serpapi",
+                "serpwow",
+                "shopping",
+                "videos"
+            ],
+            "time": "2019-02-06T21:52:20+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
