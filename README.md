@@ -359,7 +359,7 @@ $serpwow = new GoogleSearchResults("demo");
 // set up a simple query
 $params = [
   "q" => "pizza",
-  "start" => 0,
+  "page" => 1,
   "num" => $numberOfResults
 ];
 
@@ -395,7 +395,7 @@ $params = [
   "time_period_max" => "02/08/2019",
   "device" => "mobile",
   "csv_fields" => "search.q,organic_results.position,organic_results.domain",
-  "start" => "0",
+  "page" => "1",
   "num" => "100"
 ];
 
