@@ -63,6 +63,10 @@ class GoogleSearchResults {
     return $this->httpGet("json", "json", NULL, "/live/batches/{$batchId}/searches/{$page}");
   }
 
+  public function findBatchSearches($batchId, $page, $searchTerm) {
+    return $this->httpGet("json", "json", NULL, "/live/batches/{$batchId}/searches/{$page}", $searchTerm);
+  }
+
   public function listAllBatchSearchesAsJSON($batchId) {
     return $this->httpGet("json", "json", NULL, "/live/batches/{$batchId}/searches/json");
   }
@@ -95,7 +99,7 @@ class GoogleSearchResults {
     return $this->httpPut("/live/batches/{$batchId}/{$searchId}", $params);
   }
     
-  function httpGet($decode_format, $output, $q, $path) {
+  function httpGet($decode_format, $output, $q, $path, $searchTerm) {
     if($this->api_key == NULL) {
       throw new SerpWowException("api_key must be defined in the constructor");
     }
@@ -107,6 +111,9 @@ class GoogleSearchResults {
       'source' => 'php',
       'api_key' => $this->api_key
     ];
+    if (!is_null($searchTerm)) {
+      $default_q['q'] = $searchTerm;
+    }
     if ($output != 'json') {
       $default_q['output'] = $output;
     }
