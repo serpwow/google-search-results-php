@@ -14,7 +14,7 @@ class GoogleSearchResults {
   public $api;
   public $api_key;
   
-  public function __construct($api_key="demo") {
+  public function __construct($api_key="API_KEY") {
     $this->api_key = $api_key;
   }
   

@@ -44,7 +44,7 @@ Simplest example for a standard query "pizza", returning the Google SERP (Search
 require "vendor/autoload.php";
 
 // create the serpwow object, passing in our API key
-$serpwow = new GoogleSearchResults("demo");
+$serpwow = new GoogleSearchResults("API_KEY");
 
 // set up the search parameters
 $params = [
@@ -161,7 +161,7 @@ Example of a Google query geo-locating the query as if the user were located in 
 require "vendor/autoload.php";
 
 // create the serpwow object, passing in our API key
-$serpwow = new GoogleSearchResults("demo");
+$serpwow = new GoogleSearchResults("API_KEY");
 
 // set up the search parameters
 $params = [
@@ -187,7 +187,7 @@ Use the ``search_type`` param to search Google Places, Videos, Images and News. 
 require "vendor/autoload.php";
 
 // create the serpwow object, passing in our API key
-$serpwow = new GoogleSearchResults("demo");
+$serpwow = new GoogleSearchResults("API_KEY");
 
 
 // perform a search on Google News, just looking at blogs, ordered by date, in the last year, filtering out duplicates
@@ -235,7 +235,7 @@ SerpWow can return data in JSON, HTML and CSV formats using the ``json``, ``html
 require "vendor/autoload.php";
 
 // create the serpwow object, passing in our API key
-$serpwow = new GoogleSearchResults("demo");
+$serpwow = new GoogleSearchResults("API_KEY");
 
 /* 
   Set up parameters the query (q) and location parameters
@@ -273,7 +273,7 @@ To request that SerpWow renders the Google search results via a mobile or tablet
 require "vendor/autoload.php";
 
 // create the serpwow object, passing in our API key
-$serpwow = new GoogleSearchResults("demo");
+$serpwow = new GoogleSearchResults("API_KEY");
 
 // set up the mobile params
 $paramsMobile = [
@@ -316,7 +316,7 @@ When making a request via the ``json`` method an object is returned. You can ins
 require "vendor/autoload.php";
 
 // create the serpwow object, passing in our API key
-$serpwow = new GoogleSearchResults("demo");
+$serpwow = new GoogleSearchResults("API_KEY");
 
 // set up a simple query
 $params = [
@@ -354,7 +354,7 @@ require "vendor/autoload.php";
 $numberOfResults = 100;
 
 // create the serpwow object, passing in our API key
-$serpwow = new GoogleSearchResults("demo");
+$serpwow = new GoogleSearchResults("API_KEY");
 
 // set up a simple query
 $params = [
@@ -380,7 +380,7 @@ print_r(sizeof(result.organic_results).' organic results returned');
 require "vendor/autoload.php";
 
 // create the serpwow object, passing in our API key
-$serpwow = new GoogleSearchResults("demo");
+$serpwow = new GoogleSearchResults("API_KEY");
 
 // set up a simple query
 $params = [
@@ -417,7 +417,7 @@ The [Locations API](https://serpwow.com/docs/locations-api/overview) allows you 
 require "vendor/autoload.php";
 
 // create the serpwow object, passing in our API key
-$serpwow = new GoogleSearchResults("demo");
+$serpwow = new GoogleSearchResults("API_KEY");
 
 // set up a simple locations query
 $params = [
@@ -442,7 +442,7 @@ The [Account API](https://serpwow.com/docs/account-api) allows you to check your
 require "vendor/autoload.php";
 
 // create the serpwow object, passing in our API key
-$serpwow = new GoogleSearchResults("demo");
+$serpwow = new GoogleSearchResults("API_KEY");
 
 // get our account info
 $result = $serpwow->account($params);
