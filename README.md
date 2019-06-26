@@ -64,7 +64,7 @@ print_r($result);
 To get a free API Key head over to [app.serpwow.com/signup](https://app.serpwow.com/signup).
 
 ## Example Response
-A snapshot (shortened for brevity) of the JSON response returned is shown below. For details of all of the fields from the Google search results page that are parsed please see the [docs](https://serpwow.com/docs/search-api/results/overview).
+A snapshot (shortened for brevity) of the JSON response returned is shown below. For details of all of the fields from the Google search results page that are parsed please see the [docs](https://serpwow.com/docs/search-api/results/google/overview).
 ```json
 {
   "request_info": {
