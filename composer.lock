@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f8b8aca0a2684bf33d357744f74bb30a",
+    "content-hash": "bd952863475bb5e509af0c1fa4a6eebf",
     "packages": [
         {
             "name": "tcdent/php-restclient",
