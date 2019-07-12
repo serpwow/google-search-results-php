@@ -111,7 +111,7 @@ class GoogleSearchResults {
       'source' => 'php',
       'api_key' => $this->api_key
     ];
-    if (!is_null($searchTerm)) {
+    if (isset($searchTerm)) {
       $default_q['q'] = $searchTerm;
     }
     if ($output != 'json') {
