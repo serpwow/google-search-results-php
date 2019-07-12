@@ -99,7 +99,7 @@ class GoogleSearchResults {
     return $this->httpPut("/live/batches/{$batchId}/{$searchId}", $params);
   }
     
-  function httpGet($decode_format, $output, $q, $path, $searchTerm) {
+  function httpGet($decode_format, $output, $q, $path, $searchTerm = NULL) {
     if($this->api_key == NULL) {
       throw new SerpWowException("api_key must be defined in the constructor");
     }
