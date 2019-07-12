@@ -19,36 +19,36 @@ class GoogleSearchResults {
   }
   
   public function json($q) {
-    return $this->httpGet('json', 'json', $q, '/live/search');
+    return $this->httpGet('json', 'json', $q, '/live/search', NULL);
   }
 
   public function html($q) {
-    return $this->httpGet('string', 'html', $q, '/live/search');
+    return $this->httpGet('string', 'html', $q, '/live/search', NULL);
   }
 
   public function csv($q) {
-    return $this->httpGet('string', 'csv', $q, '/live/search');
+    return $this->httpGet('string', 'csv', $q, '/live/search', NULL);
   }
 
   public function locations($q) {
-    return $this->httpGet('json', 'json', $q, '/live/locations');
+    return $this->httpGet('json', 'json', $q, '/live/locations', NULL);
   }
 
   public function account() {
-    return $this->httpGet('json', 'json', NULL, '/live/account');
+    return $this->httpGet('json', 'json', NULL, '/live/account', NULL);
   }
 
 
   public function listBatches() {
-    return $this->httpGet('json', 'json', NULL, '/live/batches');
+    return $this->httpGet('json', 'json', NULL, '/live/batches', NULL);
   }
 
   public function getBatch($batchId) {
-    return $this->httpGet('json', 'json', NULL, "/live/batches/{$batchId}");
+    return $this->httpGet('json', 'json', NULL, "/live/batches/{$batchId}", NULL);
   }
 
   public function startBatch($batchId) {
-    return $this->httpGet('json', 'json', NULL, "/live/batches/{$batchId}/start");
+    return $this->httpGet('json', 'json', NULL, "/live/batches/{$batchId}/start", NULL);
   }
 
   public function deleteBatch($batchId) {
@@ -60,7 +60,7 @@ class GoogleSearchResults {
   }
 
   public function listBatchSearches($batchId, $page) {
-    return $this->httpGet("json", "json", NULL, "/live/batches/{$batchId}/searches/{$page}");
+    return $this->httpGet("json", "json", NULL, "/live/batches/{$batchId}/searches/{$page}", NULL);
   }
 
   public function findBatchSearches($batchId, $page, $searchTerm) {
@@ -68,23 +68,23 @@ class GoogleSearchResults {
   }
 
   public function listAllBatchSearchesAsJSON($batchId) {
-    return $this->httpGet("json", "json", NULL, "/live/batches/{$batchId}/searches/json");
+    return $this->httpGet("json", "json", NULL, "/live/batches/{$batchId}/searches/json", NULL);
   }
 
   public function listAllBatchSearchesAsCSV($batchId) {
-    return $this->httpGet("json", "json", NULL, "/live/batches/{$batchId}/searches/csv");
+    return $this->httpGet("json", "json", NULL, "/live/batches/{$batchId}/searches/csv", NULL);
   }
 
   public function listBatchResults($batchId) {
-    return $this->httpGet('json', 'json', NULL, "/live/batches/{$batchId}/results");
+    return $this->httpGet('json', 'json', NULL, "/live/batches/{$batchId}/results", NULL);
   }
 
   public function getBatchResultSet($batchId, $resultSetId) {
-    return $this->httpGet("json", "json", NULL, "/live/batches/{$batchId}/results/{$resultSetId}");
+    return $this->httpGet("json", "json", NULL, "/live/batches/{$batchId}/results/{$resultSetId}", NULL);
   }
 
   public function getBatchResultSetAsCSV($batchId, $resultSetId) {
-    return $this->httpGet("json", "json", NULL, "/live/batches/{$batchId}/results/{$resultSetId}/csv");
+    return $this->httpGet("json", "json", NULL, "/live/batches/{$batchId}/results/{$resultSetId}/csv", NULL);
   }
 
   public function createBatch($params) {
