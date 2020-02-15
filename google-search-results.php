@@ -51,6 +51,10 @@ class GoogleSearchResults {
     return $this->httpGet('json', 'json', NULL, "/live/batches/{$batchId}/start", NULL);
   }
 
+  public function stopBatch($batchId) {
+    return $this->httpGet('json', 'json', NULL, "/live/batches/{$batchId}/stop", NULL);
+  }
+
   public function deleteBatch($batchId) {
     return $this->httpDelete("/live/batches/{$batchId}");
   }
